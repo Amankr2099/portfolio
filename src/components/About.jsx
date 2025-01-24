@@ -52,19 +52,19 @@ const skills = [
 const tools = [
   {
     name: "MongoDB",
-    path: "/src/assets/icons/mongodb.svg",
+    path: "/src/assets/mongodb.svg",
   },
   {
     name: "Express",
-    path: "/src/assets/icons/express.svg",
+    path: "/src/assets/express.svg",
   },
   {
     name: "React",
-    path: "/src/assets/icons/react.svg",
+    path: "/src/assets/react.svg",
   },
   {
     name: "Node",
-    path: "/src/assets/icons/node.svg",
+    path: "/src/assets/node.svg",
   },
 ];
 
