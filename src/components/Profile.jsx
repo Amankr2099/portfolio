@@ -56,7 +56,7 @@ const Profile = () => {
       {/* Content */}
       {/* Content */}
       <div className="relative  flex flex-col items-center justify-center min-h-screen text-center text-gray-900 p-4">
-        <div className=" text-5xl md:text-9xl sm:text-6xl font-bold mb-2" style={{fontFamily:'Saira Stencil One',fontWeight:800}}>ΔMΔN </div>
+        <div className=" text-8xl md:text-9xl sm:text-8xl font-bold mb-2" style={{fontFamily:'Saira Stencil One',fontWeight:800}}>ΔMΔN </div>
         <h4 className="text-xl md:text-2xl sm:text-sm font-bold mt-4">Hey, I'm Aman Kumar Yadav</h4>
 
         {/* About me */}

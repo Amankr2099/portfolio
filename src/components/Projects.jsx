@@ -5,40 +5,40 @@ const projects = [
     id: 2,
     name: "Cosmoblog",
     description: "A blogging platform for astronomy enthusiasts.",
-    laptop_image: "src/assets/projects/cosmoblog_laptop.png",
-    mobile_image: "src/assets/projects/cosmoblog_mobile.png",
+    laptop_image: "/src/assets/projects/cosmoblog_laptop.png",
+    mobile_image: "/src/assets/projects/cosmoblog_mobile.png",
     link: "https://cosmoblog.vercel.app/",
   },
   {
     id: 3,
     name: "Quizzer",
     description: "An interactive quiz app with custom quiz topics",
-    laptop_image: "src/assets/projects/quizzer_laptop2.png",
-    mobile_image: "src/assets/projects/quizzer_mobile.png",
+    laptop_image: "/src/assets/projects/quizzer_laptop2.png",
+    mobile_image: "/src/assets/projects/quizzer_mobile.png",
     link: "https://quiz-generating-app.vercel.app/",
   },
   {
     id: 4,
     name: "Solwalls",
     description: "A platform for creating and sharing anime style wallpapers.",
-    laptop_image: "src/assets/projects/solwalls_laptop.png",
-    mobile_image: "src/assets/projects/solwalls_mobile.png",
+    laptop_image: "/src/assets/projects/solwalls_laptop.png",
+    mobile_image: "/src/assets/projects/solwalls_mobile.png",
     link: "https://solwalls.vercel.app/",
   },
   {
     id: 5,
     name: "Watchworth",
     description: "A movie discovery app with recommendations and reviews.",
-    laptop_image: "src/assets/projects/watchwoth_laptop.png",
-    mobile_image: "src/assets/projects/watchwoth_mobile.png",
+    laptop_image: "/src/assets/projects/watchwoth_laptop.png",
+    mobile_image: "/src/assets/projects/watchwoth_mobile.png",
     link: "https://watch-worth-app.vercel.app/",
   },
   {
     id: 1,
     name: "Chatwaves",
     description: "A messaging app with real-time communication features.",
-    laptop_image: "src/assets/projects/chatwaves_laptop.png",
-    mobile_image: "src/assets/projects/chatwaves_mobile.png",
+    laptop_image: "/src/assets/projects/chatwaves_laptop.png",
+    mobile_image: "/src/assets/projects/chatwaves_mobile.png",
     link: "https://chatwaves.vercel.app/",
   },
 ];
@@ -46,11 +46,11 @@ const projects = [
 const Projects = () => {
   return (
     <div
-      className="min-h-screen mt-12 "
+      className="max-h-screen mt-12 "
       id="projects"
     >
       <div className="max-w-screen-lg">
-      <h2 className="md:text-5xl sm:text-3xl p-3 text-center my-10  ">
+      <h2 className="md:text-5xl sm:text-3xl p-3 text-center my-10">
         Recent Projects
       </h2>
 
