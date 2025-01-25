@@ -52,19 +52,19 @@ const skills = [
 const tools = [
   {
     name: "MongoDB",
-    path: "/src//assets/mongodb.svg",
+    path: "/public/assets/mongodb.svg",
   },
   {
     name: "Express",
-    path: "/src//assets/express.svg",
+    path: "/public/assets/express.svg",
   },
   {
     name: "React",
-    path: "/src//assets/react.svg",
+    path: "/public/assets/react.svg",
   },
   {
     name: "Node",
-    path: "/src//assets/node.svg",
+    path: "/public/assets/node.svg",
   },
 ];
 
@@ -103,7 +103,7 @@ const About = () => {
 
         <div className="w-full lg:w-1/2 px-4 mt-6 lg:mt-0">
           <img
-            src="/src//assets/output-onlinepngtools.png"
+            src="/public/assets/output-onlinepngtools.png"
             alt="ic"
             className="w-full h-auto"
           />
