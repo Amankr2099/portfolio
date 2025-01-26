@@ -1,5 +1,4 @@
 import React from "react";
-
 // const tools = [
 //   { id: 1, name: "React", iconClass: "fa-react", iconColor: "text-blue-600" },
 //   {
@@ -81,7 +80,7 @@ const About = () => {
             technological world
           </div>
           <h2 className="text-2xl font-semibold my-2">Tools I know</h2>
-          <div className="flex flex-wrap justify-start gap-5">
+          <div className="flex flex-wrap justify-start gap-5 my-10">
             {tools.map((tool, index) => (
               <div
                 key={index}
@@ -103,7 +102,7 @@ const About = () => {
 
         <div className="w-full lg:w-1/2 px-4 mt-6 lg:mt-0">
           <img
-            src="/public/assets/output-onlinepngtools.png"
+            src="public\assets\images\laptop_typing.png"
             alt="ic"
             className="w-full h-auto"
           />
