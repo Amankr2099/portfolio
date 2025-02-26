@@ -52,32 +52,31 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // // Send email using EmailJS
-    // emailjs
-    //   .sendForm(
-    //     "YOUR_SERVICE_ID", // Replace with your Service ID
-    //     "YOUR_TEMPLATE_ID", // Replace with your Template ID
-    //     e.target,
-    //     "YOUR_USER_ID" // Replace with your User ID
-    //   )
-    //   .then(
-    //     (result) => {
-    //       setStatus("Message sent successfully!");
-    //       setFormData({
-    //         name: "",
-    //         email: "",
-    //         subject: "",
-    //         message: "",
-    //       });
-    //     },
-    //     (error) => {
-    //       setStatus("Failed to send message. Please try again later.");
-    //     }
-    //   );
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key",'0f05ac71-47d1-4c88-b270-8ab1ee5d308b');
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      alert("Unable to send email at current moment");
+      setResult(data.message);
+    }
   };
+
 
   return (
   
@@ -119,7 +118,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="ml-auto space-y-4">
+          <form onSubmit={onSubmit} className="ml-auto space-y-4">
             <input
               type="text"
               name="name"
